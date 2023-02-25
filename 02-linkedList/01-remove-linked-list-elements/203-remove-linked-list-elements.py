@@ -13,7 +13,7 @@ class Solution:
         dummy = ListNode(next=head)
         prev, crnt = dummy, head
         while crnt:
-            if (crnt.val == val):
+            if crnt.val == val:
                 prev.next = crnt.next
             else:
                 prev = crnt
