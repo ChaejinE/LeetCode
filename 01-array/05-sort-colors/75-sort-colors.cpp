@@ -1,11 +1,16 @@
-class Solution {
+#include <vector>
+
+using namespace std;
+class Solution
+{
 public:
-    void sortColors(vector<int>& nums) {
+    void sortColors(vector<int> &nums)
+    {
         int writeIdx = 0;
         int zeroIdx = 0;
         int twoIdx = nums.size() - 1;
 
-        while(writeIdx <= twoIdx)
+        while (writeIdx <= twoIdx)
         {
             if (nums[writeIdx] == 0)
             {

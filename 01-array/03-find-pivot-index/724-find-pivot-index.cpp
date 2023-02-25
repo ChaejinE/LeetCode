@@ -1,10 +1,17 @@
-class Solution {
+#include <vector>
+#include <numeric>
+
+using namespace std;
+
+class Solution
+{
 public:
-    int pivotIndex(vector<int>& nums) {
+    int pivotIndex(vector<int> &nums)
+    {
         int leftSum = 0;
         int rightSum = accumulate(nums.begin(), nums.end(), 0);
 
-        for(int pivotIdx = 0; pivotIdx < nums.size(); ++pivotIdx)
+        for (int pivotIdx = 0; pivotIdx < nums.size(); ++pivotIdx)
         {
             rightSum -= nums[pivotIdx];
 

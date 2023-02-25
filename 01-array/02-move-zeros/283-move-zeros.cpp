@@ -1,6 +1,12 @@
-class Solution {
+#include <vector>
+
+using namespace std;
+
+class Solution
+{
 public:
-    void moveZeroes(vector<int>& nums) {
+    void moveZeroes(vector<int> &nums)
+    {
         int numberFindIdx = 0;
         int writeIdx = 0;
 
@@ -11,7 +17,7 @@ public:
                 std::swap(nums[writeIdx], nums[numberFindIdx]);
                 ++writeIdx;
             }
-            
+
             ++numberFindIdx;
         }
     }
